@@ -216,11 +216,11 @@ def visitedNodes(node, goal_node, visited):
         return False
 
 
-def goalReached(node, goal_node, goal_thres):
+def goalReached(node, goal_node, goal_tolerance):
     node_pos = node.getPos()
 
     dist = np.hypot((node_pos[0] - goal_node[0]), (node_pos[1] - goal_node[1]))
-    if dist < goal_thres:
+    if dist < goal_tolerance:
         return True
     else:
         return False
