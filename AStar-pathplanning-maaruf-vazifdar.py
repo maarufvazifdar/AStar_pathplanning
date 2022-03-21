@@ -7,7 +7,6 @@ GitHub: https://github.com/maarufvazifdar/AStar_pathplanning
 
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.animation as animation
 from queue import PriorityQueue
 import cv2
 
